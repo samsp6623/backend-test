@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from typing import Annotated, Literal
+from typing import Annotated
 from models import User, IssueURL
 from fastapi import FastAPI
 
@@ -16,7 +16,7 @@ BASE_URL = "https://api.github.com"
 
 
 def get_data(
-    endpoint: str, data: None | dict = None, method: Literal["GET", "POST"] = "GET"
+    endpoint: str, data = None, method = "GET"
 ):
     """A Generic function to make call to Github and fetch user relaed data."""
     headers = {
