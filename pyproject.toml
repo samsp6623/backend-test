@@ -1,5 +1,5 @@
 [project]
-name = "Backend Test Github API Integration"
+name = "backend-test"
 version = "0.1.0"
 description = "A backend Github API integration test from cactro.com"
 readme = "README.md"
